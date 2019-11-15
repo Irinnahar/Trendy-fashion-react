@@ -1,6 +1,7 @@
 import React from 'react';
 import Homepage from './pages/homepage/homepage.component';
 import { BrowserRouter as Router, Switch, Route, Link, useParams } from "react-router-dom";
+import Shop from './pages/shop/shop.component';
 
 import './App.scss';
 
@@ -12,11 +13,8 @@ function App() {
 
     <div>
       <Route exact path="/" component={Homepage} />
-      <Route exact path="/shop/hats" component={HatsPage} />
-      <Route exact path="shop/jackets" component={HatsPage} />
-      <Route exact path="/shop/sneakers" component={HatsPage} />
-      <Route exact path="/shop/womens" component={HatsPage} />
-      <Route exact path="/shop/mens" component={HatsPage} />
+      <Route exact path="/shop" component={Shop} />
+
     </div>
   );
 }
