@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import InputField from '../../shared/input-field/input-field.component';
+import CustomButton from '../../shared/custom-button/custom-button.component';
 
 import './signin.styles.scss';
 
@@ -41,9 +42,9 @@ class Signin extends Component {
                         handleChange={this.handleChange}
                         value={this.state.password}
                     />
-                    <input
-                        type="submit"
-                    />
+                    <CustomButton type="submit">
+                        Sign In
+                    </CustomButton>
                 </form>
             </div>
         )
